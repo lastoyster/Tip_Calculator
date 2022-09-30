@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Space+Mono:wght@400;700&display=swap");
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.InputContainer {
+  display: flex;
+  align-items: center;
+  border: 0.1px solid #26c0ab42;
+  height: 2.5rem;
+}
+
+.input {
+  height: 100%;
+  width: 100%;
+  background-color: #c5e4e741;
+  border: none;
+}
+.input:focus {
+  border-radius: 0.3rem;
+  outline: #26c02b;
+  background-color: #c5e4e78c;
+  border: 2px solid #26c0ab;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+  margin: 0;
+  font-family: "Space Mono", sans-serif;
+  padding-left: 1rem;
+  font-weight: 600;
+  color: #00474b;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.icon {
+  width: 1.8rem;
+  height: 100%;
+  color: #5e7a7d;
+  background-color: #c5e4e78c;
+  font-family: "Space Mono", sans-serif;
+  opacity: 0.7;
+}
+
+#dollar {
+  padding: 0.6rem;
+  font-size: 1.2rem;
+  font-family: "Space Mono", sans-serif;
+  color: #5e7a7d;
+  opacity: 0.8;
+}
+
+label {
+  font-size: 0.8rem;
+  color: #5e7a7d;
+  font-weight: 700;
+  text-align: left;
+}
+.invalid {
+  border: 2px solid #ff6b6b;
+  background-color: #ff6b6b52;
+  height: 2.5rem;
+  width: 100%;
+  border-radius: 0.3rem;
+}
+.invalid input:focus {
+  border: 2px solid #ff6b6b;
+  background-color: #ff6b6b52;
+}
+
+/* @media (max-width:375px){
+  .input{
+    width:370px;
+  }
+} */

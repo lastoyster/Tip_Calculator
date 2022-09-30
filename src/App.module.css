@@ -1,0 +1,199 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Space+Mono:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* colorPrimary:#00474B */
+/* colorSecondary:#27C2AC */
+
+.app {
+  text-align: center;
+  background-color: #c5e4e7;
+  height: 100vh;
+  margin: 0;
+}
+.h1 {
+  padding: 3rem;
+  color: #5e7a7d;
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  letter-spacing: 1.3px;
+}
+.app_container {
+  max-width: 40rem;
+  height: 20rem;
+  background-color: white;
+  border-radius: 1rem;
+  margin: 0 auto;
+  display: flex;
+  font-family: "Space Mono", sans-serif;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.app_container__left {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+  height: 18rem;
+}
+.selectTip {
+  text-align: left;
+  font-size: 0.8rem;
+  color: #5e7a7d;
+  font-weight: 700;
+  padding-top: 1.6rem;
+  padding-bottom: 0.4rem;
+}
+.tip_buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  column-gap: 0.6rem;
+  row-gap: 0.6rem;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.4rem;
+}
+.label_error {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.label {
+  font-size: 0.8rem;
+  color: #5e7a7d;
+  font-weight: 700;
+  text-align: left;
+  padding-bottom: 0.4rem;
+}
+.label_error p {
+  color: #ff6b6b;
+  font-weight: 700;
+  font-size: 0.8rem;
+}
+.app_container__right {
+  width: 45%;
+  background-color: #00494d;
+  height: 18rem;
+  border-radius: 1rem;
+}
+.tip_amount,
+.tip_total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1.8rem 1.8rem 0 1.8rem;
+}
+.tipContainer {
+  min-height: 70%;
+}
+.tip h3 {
+  color: hsl(189, 41%, 97%);
+  font-size: 0.8rem;
+  text-align: left;
+}
+.tip p {
+  color: #c5e4e7bb;
+  font-size: 0.7rem;
+}
+
+.error {
+  color: #ff6b6b;
+  font-size: 0.9rem;
+  padding-bottom: 0.6rem;
+}
+.tip_tag {
+  color: #25c4ad;
+  font-size: 2.2rem;
+  font-weight: 800;
+}
+.tip_tag span {
+  font-size: 1.8rem;
+}
+.button {
+  color: #00494d;
+  background-color: #25c4ad;
+  text-transform: uppercase;
+  height: 2.5rem;
+  width: 80%;
+  margin: 2rem auto;
+  border: none;
+  border-radius: 5px;
+  font-weight: 700;
+  font-family: "Space Mono", sans-serif;
+  cursor: pointer;
+}
+.button:hover {
+  background-color: #c5e4e7;
+}
+.button:active {
+  background-color: #0d686d;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 512px) {
+  .app {
+    height: auto;
+  }
+  .h1 {
+    padding: 1.5rem;
+  }
+  .app_container {
+    max-width: 370px;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+  .app_container__left {
+    width: 100%;
+    padding: 15px;
+  }
+  .app_container__right {
+    width: 92%;
+    margin: 15px auto;
+  }
+}
+@media (max-width: 250px) {
+  .app_container {
+    max-width: 210px;
+  }
+  .h1 {
+    padding: 0.8rem;
+  }
+  .app_container__left {
+    width: 100%;
+    max-height: 18rem;
+  }
+  .tip_buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    row-gap: 0.3rem;
+  }
+  .app_container__right {
+    max-height: 12rem;
+  }
+  .tip_amount,
+  .tip_total {
+    margin: 1rem;
+  }
+  .tip h3 {
+    font-size: 0.7rem;
+  }
+  .tip_tag span {
+    font-size: 1.1rem;
+  }
+  .tip_tag {
+    color: #25c4ad;
+    font-size: 1.5rem;
+    font-weight: 800;
+  }
+  .button {
+    margin: 0.5rem;
+  }
+}

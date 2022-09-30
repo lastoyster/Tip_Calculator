@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Space+Mono:wght@400;700&display=swap");
+
+.button {
+  width: 95%;
+  height: 2.5rem;
+  color: #f4fafa;
+  background-color: #00494d;
+  border: none;
+  border-radius: 5px;
+  font-family: "Space Mono", sans-serif;
+  font-weight: 600;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+.button:hover,
+.button:active,
+.button:visited {
+  color: #00494d;
+  background-color: #c5e4e7;
+}
+
+.button.active {
+  color: #00494d;
+  background-color: #c5e4e7;
+}
+
+.mediaQueries {
+  height: 1.5rem;
+}
