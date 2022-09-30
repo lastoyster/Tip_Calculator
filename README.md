@@ -1,2 +1,2 @@
 # Tip_Calculator
-Created with CodeSandbox
+Front-End Mentor Challenge - Tip Calculator Made with React.js
